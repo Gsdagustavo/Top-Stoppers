@@ -107,9 +107,9 @@ if keyboard_check_pressed(ord("C")) && alarm[2] < 0 && can_time_skip && !is_time
 }
 
 // Road Roller
-if keyboard_check_pressed(ord("G")) {
-	instance_create_depth(x, y - 16, -1, oRoadRoller);
-}
+//if keyboard_check_pressed(ord("G")) {
+//	instance_create_depth(x, y - 16, -1, oRoadRoller);
+//}
 
 // Time Stop
 if keyboard_check_pressed(ord("F")) && alarm[1] == -1 && can_time_stop && alarm[7] < 0 {
@@ -126,8 +126,15 @@ if keyboard_check_pressed(ord("F")) && alarm[1] == -1 && can_time_stop && alarm[
 	
 	instance_create_layer(x, y - 8, "Instances", oTimeStopEffect);
 	
-	alarm[3] = 30;
+	knife_barrage_cooldown /= 2;
+	knife_cooldown /= 2;
+	
+	alarm[3] = 10;
+	max_time_stop += .5;
 	//alarm[8] = ((time_stop_snd_length * 30) + 50); 
+} else {
+	knife_cooldown = .4;
+	knife_barrage_cooldown = 3;
 }
 
 // Time Resumes sound

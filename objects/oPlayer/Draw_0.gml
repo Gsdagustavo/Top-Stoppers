@@ -6,7 +6,7 @@ draw_set_color(c_white);
 
 if is_time_stopped {
 	draw_text(x - 45, y + 10, "Time Stopped!");
-	draw_healthbar(x - 30, y + 40, x + 30, y + 42, alarm[0] / 6, c_black, c_white, c_white, 0, true, false);
+	draw_healthbar(x - 30, y + 40, x + 30, y + 42, alarm[0] / max_time_stop, c_black, c_white, c_white, 0, true, false);
 } 
 
 //draw_text(x, y - 96, "hspeed: " + string(hspeed));

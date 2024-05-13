@@ -29,6 +29,7 @@ time_resumes_snd_length = audio_sound_length(snd_timeResumes);
 // Player stats
 player_max_health = 100;
 player_current_health = 100;
+is_dead = false;
 is_running = false;
 
 // Knives
@@ -38,11 +39,11 @@ kill_count = 0;
 can_knife_throw = true;
 can_knife_barrage = true;
 
-knife_cooldown = .5;
+knife_cooldown = .4;
 knife_barrage_cooldown = 3;
 
 // Time stop stats
-max_time_stop = 10; // Seconds
+max_time_stop = 1; // Seconds
 time_stop_cooldown = 10; // Seconds
 player_current_timeStopCooldown = 0; // Seconds
 can_time_stop = true;
