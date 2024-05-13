@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_timeStop",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":320,
+  "compression":0,
+  "conversionMode":0,
+  "duration":4.152,
+  "name":"snd_timeStop",
+  "parent":{
+    "name":"time_stop_snds",
+    "path":"folders/Sons/time_stop_snds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_timeStop.mp3",
+  "type":0,
+  "volume":1.0,
+}
